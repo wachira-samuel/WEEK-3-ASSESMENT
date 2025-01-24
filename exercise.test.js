@@ -32,6 +32,3 @@ describe('calculateTotal',()=>{
 
 
 
-// describe("Calculate eplyment pay", ()=>{
-//    // 
-// }
