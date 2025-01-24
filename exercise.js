@@ -1,25 +1,10 @@
-// const products=[{saop: 1000, toothpaste: 5000, toothbrush: 3000, towel: 2000, shampoo: 4000}];
-
-// function calculateTotal(){
-//     let total = 0;
-//     for (let product in products){
-//         total += products[product];
-//     }
-//     return total;
-// }
-// console.log(calculateTotal(products));
-
-
 function calculateTotal(products) {
       if(products.length === 0) return 0;
       let productTotal =  products.reduce((a,b)=>a + b.price,0)
-    //   console.log(productTotal, 'productTotal');
-    // return productTotal;
-    
-    // console.log(total);
+
     ;
     TaxedProductTotal = calculateTax(productTotal, 0.08);
-    // console.log(TaxedProductTotal, 'TaxedProductTotal');
+
 
     if (TaxedProductTotal > 100) {
       return calculateDiscount(TaxedProductTotal, 0.9);
